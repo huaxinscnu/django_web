@@ -1,0 +1,22 @@
+{% extends "blog_base.html" %}
+{% load custom_markdown %}
+
+{% block title %}
+{% if article %}
+{{article.title}}
+{% else %}
+没有找到！
+{% endif %}
+{% endblock %}
+
+{% block content %}
+
+<div class="posts">
+<section class="post">
+            <header class="page-header">
+                <h2 class="alert alert-danger">没有找到！<small><small>就是这么任性！</small></small></h2>
+            </header>
+
+</section>
+ </div>
+{% endblock %}
